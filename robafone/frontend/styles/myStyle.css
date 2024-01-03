@@ -1,0 +1,75 @@
+/* Estilos globales */
+:host([theme~="dark"]) [theme~="dark"] {
+    background-color: #111; /* Color de fondo para el modo oscuro */
+    color: #fff; /* Color del texto para el modo oscuro */
+}
+
+/* Estilos para el CustomHeader */
+.custom-header {
+    width: 100%;
+    height: 100px;
+    background-color: #4CAF50;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.custom-header h1 {
+    font-size: 28px;
+    color: white;
+}
+
+/* Estilos para el CustomBar */
+.custom-bar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 192, 203);
+    border: 2px solid #e74c3c;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.alternative-vlNavBar {
+    margin-right: 20px;
+}
+
+.alternative-anchor1 {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Estilos para el CustomFooter */
+.custom-footer {
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-footer img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/* Haciendo invisible el título, los iconos y enlaces en el CustomFooter */
+.custom-footer .leftTopDiv,
+.custom-footer .rightTopDiv,
+.custom-footer .bottomDiv {
+    visibility: hidden;
+}
